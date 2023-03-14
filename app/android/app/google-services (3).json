@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1095517098932",
+    "project_id": "hello-world-fb922",
+    "storage_bucket": "hello-world-fb922.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1095517098932:android:3b18749c48052716ee98e1",
+        "android_client_info": {
+          "package_name": "com.example.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1095517098932-qf1ik9c8j0969pi5lg6evc5edmr0co6h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcWpP5QDJ5Eg-M9ZHZ11LYdRRCm3_WKHU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1095517098932-qf1ik9c8j0969pi5lg6evc5edmr0co6h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1095517098932-rf56im6qn91gga7t609e70qbtam6im02.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.firebase"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
