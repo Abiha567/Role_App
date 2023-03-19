@@ -11,23 +11,23 @@ class Login extends StatelessWidget {
   TextEditingController EmailtextController =TextEditingController();
  TextEditingController PasswordtextController =TextEditingController();
 
-    signin()async{
-    try {
-  final credential = await FirebaseAuth.instance.signInWithEmailAndPassword(
-    email: EmailtextController.text,
-    password: PasswordtextController.text
+//     signin()async{
+//     try {
+//   final credential = await FirebaseAuth.instance.signInWithEmailAndPassword(
+//     email: EmailtextController.text,
+//     password: PasswordtextController.text
 
-  );
-  // Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Pin_screen()));
- } 
-  on FirebaseAuthException catch (e) {
-  if (e.code == 'user-not-found') {
-    print('No user found for that email.');
-  } else if (e.code == 'wrong-password') {
-    print('Wrong password provided for that user.');
-  }
-}
-  }
+//   );
+//   Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Pin_screen()));
+//  } 
+//   on FirebaseAuthException catch (e) {
+//   if (e.code == 'user-not-found') {
+//     print('No user found for that email.');
+//   } else if (e.code == 'wrong-password') {
+//     print('Wrong password provided for that user.');
+//   }
+// }
+//   }
 
   @override
   Widget build(BuildContext context) {
