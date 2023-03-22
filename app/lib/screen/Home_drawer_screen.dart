@@ -12,15 +12,10 @@ class MyDrawer extends StatelessWidget {
           DrawerHeader(
               decoration: const BoxDecoration(
                 color: Colors.blue,
-            //     image: DecorationImage(
-            //       alignment: Alignment.topCenter,
-            //       image: AssetImage( "assets/badge.webp", )
-            //  ),
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                 const Center(child: Icon(Icons.person,size: 80,)),
                   IconButton(
                     onPressed: () {
                       Navigator.push(
@@ -28,32 +23,38 @@ class MyDrawer extends StatelessWidget {
                         MaterialPageRoute(builder: (context)=> Home_screen())
                         );
                     },
-                     icon: const Icon(Icons.cancel)
+                     icon: Icon(Icons.close),
                      ),
+                    const Center(
+                      child: Icon(
+                        Icons.person,
+                        size: 70,
+                    )
+                    )
                 ],
               )
                  ),
-          ListTile(
-              leading: Icon(Icons.map_outlined),
-              title: Text('Map'),
+             ListTile(
+              leading: const Icon(Icons.map_outlined),
+              title: const Text('Map'),
               onTap: () {
-                Navigator.push(
-                        context, 
-                        MaterialPageRoute(builder: (context)=> Order_tracking())
-                        );
-              }
-              ),
+               Navigator.push(
+             context, 
+             MaterialPageRoute(builder: (context)=> const Order_tracking())
+               );
+              }),
+              const Divider(),
           ListTile(
-            leading: Icon(Icons.phone),
-            title: Text('Call'),
+            leading: const Icon(Icons.phone),
+            title: const Text('Call'),
             onTap: () {
-              Navigator.push(
-                        context, 
-                        MaterialPageRoute(builder: (context)=> PhoneCall_screen())
-                        );
+             Navigator.push(
+              context, 
+              MaterialPageRoute(builder: (context)=> const PhoneCall_screen())
+               );
             },
           ),
-          Divider(),
+          const Divider(),
         ],
       ),
     );

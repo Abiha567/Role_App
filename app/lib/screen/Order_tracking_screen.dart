@@ -83,7 +83,7 @@ class _Order_trackingState extends State<Order_tracking> {
         ),
       ),
       body:  currentLocation == null
-      ? const Center(child: Text("Loading"))
+      ? const Center(child: Text("Loading..."))
         :GoogleMap(
         initialCameraPosition:
         CameraPosition(

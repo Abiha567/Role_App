@@ -11,7 +11,7 @@ class PINNumber extends StatelessWidget {
       width: 50.0,
       child: TextField(
         controller: textEditingController,
-        enabled: true,
+        enabled: false,
         obscureText: true,
         textAlign: TextAlign.center,
         decoration: InputDecoration(

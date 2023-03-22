@@ -5,7 +5,7 @@ import 'PinNum_screen.dart';
 class SecurityPin_screen extends StatelessWidget {
    SecurityPin_screen({super.key});
 
-  List<String> currentpin = ["","","",""];
+  List<String> currentpin = ["","",""];
    int pinIndex = 0;
     //  var selectedindex = 0;
 
@@ -31,7 +31,7 @@ class SecurityPin_screen extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              const SizedBox(height: 15.0,),
+              const SizedBox(height: 20.0,),
              const Text(
              "Security Pin",
              style: TextStyle(
@@ -43,11 +43,12 @@ class SecurityPin_screen extends StatelessWidget {
             const SizedBox(height: 50.0,),
             buildPinRow(),
             const SizedBox(height: 20.0,),
+            buildNumPad(context),
             ],
           ),
         ),
          ),
-         buildNumPad(context),
+        //  buildNumPad(context),
     ],
    ),
     );
